@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архив кроссовок</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, sans-serif;
+            background: var(--tg-theme-bg-color, #ffffff);
+            color: var(--tg-theme-text-color, #000000);
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 { margin-bottom: 20px; }
+        .filters { margin-bottom: 20px; }
+        .filter-btn {
+            background: var(--tg-theme-button-color, #40a7e3);
+            color: var(--tg-theme-button-text-color, #ffffff);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👟 Архив кроссовок</h1>
+        <p>Выберите фильтр для просмотра коллекции.</p>
+        <div class="filters" id="filters">
+            <!-- Кнопки фильтров появятся здесь -->
+        </div>
+        <div id="sneaker-list">
+            <!-- Список кроссовок появится здесь -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
